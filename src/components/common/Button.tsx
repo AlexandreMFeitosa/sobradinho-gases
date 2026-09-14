@@ -1,12 +1,16 @@
+import {Link} from "react-router-dom";
+
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   children: React.ReactNode;
   variant?: "primary" | "secondary";
+  to?:string;
 };
 
 export default function Button({
   children,
   variant = "primary",
   className = "",
+  to,
   ...props
 }: ButtonProps) {
   
@@ -16,6 +20,14 @@ export default function Button({
   };
 
   const baseStyles = "px-6 py-3 rounded font-medium transition-colors cursor-pointer inline-flex items-center justify-center";
+
+  if (to) {
+    return (
+      <Link to={to} className={`${baseStyles} ${variantStyles[variant]} ${className}`}>
+        {children}
+      </Link>
+    );
+  }
 
   return (
     <button

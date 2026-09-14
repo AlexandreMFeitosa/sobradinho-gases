@@ -19,6 +19,7 @@ function FeaturedProducts() {
         <div className="products-grid">
           {products.map((product) => (
             <ProductCard
+              id={product.id}
               key={product.id}
               name={product.name}
               description={product.description}
@@ -28,7 +29,7 @@ function FeaturedProducts() {
         </div>
 
         <div className="featured-products-action">
-          <Button>Ver Produtos</Button>
+          <Button to={"/produtos"}>Ver Produtos</Button>
         </div>
       </Container>
     </section>

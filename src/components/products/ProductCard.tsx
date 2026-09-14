@@ -1,12 +1,14 @@
 import Button from "../common/Button";
 
 type ProductCardProps = {
+  id: string;
   name: string;
   description: string;
   image: string;
 };
 
 function ProductCard({
+  id,
   name,
   description,
   image,
@@ -22,7 +24,7 @@ function ProductCard({
 
         <p>{description}</p>
 
-        <Button>Saiba mais</Button>
+        <Button to={`/produto/${id}`}>Saiba mais</Button>
       </div>
     </article>
   );
