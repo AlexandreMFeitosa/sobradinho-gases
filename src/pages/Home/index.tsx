@@ -2,7 +2,7 @@ import Hero from "../../components/sections/Hero";
 import FeaturedProducts from "../../components/sections/FeaturedProducts";
 import Sectors from "../../components/sections/Sectors";
 import About from "../../components/sections/About";
-import Footer from "../../components/sections/Footer";
+
 import FAQ from "../../components/sections/FAQ";
 
 export default function Home() {
@@ -13,7 +13,6 @@ export default function Home() {
       <Sectors />
       <About />
       <FAQ />
-      <Footer />
     </div>
   );
 }
