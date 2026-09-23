@@ -5,17 +5,17 @@ import SectorsCard from "../sectors/SectorsCard";
 
 function Sectors() {
   return (
-    <section className="sectors">
+    <section className="bg-white py-16 md:py-20">
       <Container>
-        <div className="sectors-header">
+        <div className="mx-auto mb-12 max-w-2xl text-center">
           <SectionTitle>Setores</SectionTitle>
 
-          <p>
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">
             Soluções em gases para diferentes necessidades e segmentos.
           </p>
         </div>
 
-        <div className="sectors-grid">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {sectors.map((sector) => (
             <SectorsCard
               key={sector.id}
