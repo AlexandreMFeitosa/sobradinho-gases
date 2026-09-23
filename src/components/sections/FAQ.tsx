@@ -5,11 +5,11 @@ import Container from "../common/Container";
 
 function FAQ() {
   return (
-    <section className="faq">
+    <section className="py-16">
       <Container>
         <SectionTitle>Perguntas e Respostas</SectionTitle>
 
-        <div className="faq-list">
+        <div className="mx-auto mt-10 max-w-3xl space-y-4">
           {faqs.map((faq) => (
             <FAQItem
               key={faq.id}
