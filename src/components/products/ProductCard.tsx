@@ -14,17 +14,27 @@ function ProductCard({
   image,
 }: ProductCardProps) {
   return (
-    <article className="product-card">
-      <div className="product-card-image">
-        <img src={image} alt={name} />
+    <article className="flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+      <div className="flex h-64 items-center justify-center bg-gray-50 p-8">
+        <img
+          src={image}
+          alt={name}
+          className="h-full w-full object-contain transition-transform duration-300 hover:scale-105"
+        />
       </div>
 
-      <div className="product-card-content">
-        <h3>{name}</h3>
+      <div className="flex flex-1 flex-col p-6">
+        <h3 className="mb-3 text-xl font-bold text-[#123b63]">
+          {name}
+        </h3>
 
-        <p>{description}</p>
+        <p className="mb-6 flex-1 text-base leading-relaxed text-gray-600">
+          {description}
+        </p>
 
-        <Button to={`/produto/${id}`}>Saiba mais</Button>
+        <Button to={`/produto/${id}`}>
+          Saiba mais
+        </Button>
       </div>
     </article>
   );
