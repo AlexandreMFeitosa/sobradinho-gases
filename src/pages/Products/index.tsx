@@ -3,28 +3,33 @@ import SectionTitle from "../../components/common/SectionTitle";
 import ProductCard from "../../components/products/ProductCard";
 import { products } from "../../data/products";
 
-function index() {
+function Products() {
   return (
-    <main>
+    <main className="bg-gray-50 py-12 md:py-16">
       <Container>
-        <SectionTitle>Produtos</SectionTitle>
+        <div className="mx-auto mb-12 max-w-2xl text-center">
+          <SectionTitle>Nossos Produtos</SectionTitle>
 
-        <p>Confira nossos produtos e soluções disponíveis!</p>
-
-        <div className="products-grid">
-          {products.map((product) => (
-            <ProductCard
-              id={product.id}
-              key={product.id}
-              name={product.name}
-              description={product.description}
-              image={product.image} />
-          ))}
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">
+            Soluções em gases medicinais e industriais para diferentes
+            necessidades profissionais e comerciais.
+          </p>
         </div>
 
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {products.map((product) => (
+            <ProductCard
+              key={product.id}
+              id={product.id}
+              name={product.name}
+              description={product.description}
+              image={product.image}
+            />
+          ))}
+        </div>
       </Container>
     </main>
-  )
+  );
 }
 
-export default index;
+export default Products;
