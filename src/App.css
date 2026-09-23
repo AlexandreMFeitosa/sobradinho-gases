@@ -152,39 +152,6 @@
   }
 }
 
-/* ====================================================
-      EStilização do FeaturedProducts e ProductCard 
-========================================================*/
-
-.featured-products {
-  padding: 4rem 0;
-  background-color: #f8fafc;
-}
-
-.featured-products-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.featured-products-header p {
-  margin-top: rem;
-  color: #64748b;
-}
-
-.products-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-
-.featured-products-action {
-  display: flex;
-  justify-content: center;
-  margin-top: 2.5rem;
-}
-
 
 @media (min-width: 640px) {
   .products-grid {
