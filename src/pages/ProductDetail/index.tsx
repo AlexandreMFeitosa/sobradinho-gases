@@ -8,7 +8,7 @@ export default function ProductDetails() {
 
   const product = products.find((item) => item.id === slug);
 
-  // Tratamento de erro, em caso de não encontrar o produto
+  // TRatamento de erro, em caso de não encontrar o produto
   if (!product) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-gray-100 p-4">
@@ -43,6 +43,18 @@ export default function ProductDetails() {
             <p className="mt-4 text-gray-600">
               {product.description}
             </p>
+
+            <p className="mt-4 text-gray-600">
+              {product.type}
+            </p>
+
+            <ul className="mt-4 list-disc space-y-1 pl-5 text-gray-600">
+              {product.applications.map((application) => (
+                <li key={application} className="list-disc pl-4 text-gray-600">
+                  {application}
+                </li>
+              ))}
+            </ul>
 
             <p className="mb-6 mt-4 text-lg font-semibold text-[#123b63]">
               Entre em contato para consultar disponibilidade e condições.
