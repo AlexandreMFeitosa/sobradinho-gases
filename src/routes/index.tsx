@@ -10,6 +10,7 @@ import Sectors from '../pages/Sectors';
 import About from '../pages/About';
 import FAQ from '../pages/FAQ';
 import Contact from '../pages/Contact';
+import SectorDetails from '../pages/Sectors/Details';
 
 export const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ export const router = createBrowserRouter([
       { path: '/produto/:slug', element: <ProductDetails /> },
       { path: '/locacao', element: <Rental /> },
       { path: '/segmentos', element: <Sectors /> },
+      { path: '/segmentos/:id', element: <SectorDetails /> },
       { path: '/sobre', element: <About /> },
       { path: '/faq', element: <FAQ /> },
       { path: '/contato', element: <Contact /> },
