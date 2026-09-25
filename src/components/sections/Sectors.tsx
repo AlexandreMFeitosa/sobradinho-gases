@@ -19,6 +19,7 @@ function Sectors() {
           {sectors.map((sector) => (
             <SectorsCard
               key={sector.id}
+              id={sector.id}
               name={sector.name}
               description={sector.description}
               image={sector.image}
