@@ -1,82 +1,112 @@
 import Container from "../../components/common/Container";
 import SectionTitle from "../../components/common/SectionTitle";
-import { Phone, Mail, AtSign, Clock, MapPin, MessageSquare } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  AtSign,
+  Clock,
+  MapPin,
+  MessageSquare,
+} from "lucide-react";
 
 function Contact() {
   return (
-    <main className="py-12 bg-gray-50 min-h-screen">
+    <main className="min-h-screen bg-gray-50 py-12 md:py-16">
       <Container>
-        <div className="max-w-4xl mx-auto">
+        <div className="mx-auto max-w-4xl">
           {/* Cabeçalho */}
-          <div className="text-center mb-10">
+          <div className="mb-10 text-center">
             <SectionTitle>Contatos</SectionTitle>
-            <p className="mt-2 text-gray-600 text-lg">
+
+            <p className="mt-3 text-lg text-gray-600">
               Fale com a Sobradinho Gases
             </p>
           </div>
 
-          {/* Destaque WhatsApp */}
-          <div className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm text-center mb-8 border-l-4 border-l-green-500">
-            <h2 className="text-xl font-bold text-slate-900 mb-2">
+          {/* WhatsApp */}
+          <div className="mb-8 rounded-2xl border border-gray-100 border-l-4 border-l-green-500 bg-white p-8 text-center shadow-sm">
+            <h2 className="mb-2 text-xl font-bold text-slate-900">
               Fale conosco pelo WhatsApp
             </h2>
-            <p className="text-gray-600 mb-6 max-w-md mx-auto">
-              Tire suas dúvidas, consulte disponibilidade e condições de entrega rapidamente.
+
+            <p className="mx-auto mb-6 max-w-md text-gray-600">
+              Tire suas dúvidas, consulte disponibilidade e condições de
+              entrega rapidamente.
             </p>
+
             <a
               href="https://wa.me/556195674355"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg font-semibold text-white bg-green-600 hover:bg-green-700 transition-all shadow-md hover:shadow-lg"
+              className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-8 py-3.5 font-semibold text-white shadow-md transition-all hover:bg-green-700 hover:shadow-lg"
             >
-              <MessageSquare className="w-5 h-5" />
+              <MessageSquare className="h-5 w-5" />
               Falar no WhatsApp
             </a>
           </div>
 
-          {/* Grid de Informações Secundárias */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            {/* Outros Canais */}
-            <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex flex-col justify-between">
-              <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-                Outros Canais
+          {/* Informações */}
+          <div className="mb-8 grid grid-cols-1 gap-6 md:grid-cols-2">
+            {/* Outros canais */}
+            <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+              <h3 className="mb-5 text-lg font-bold text-slate-900">
+                Outros canais
               </h3>
-              <ul className="space-y-4">
+
+              <ul className="space-y-5">
                 <li className="flex items-center gap-3 text-gray-700">
-                  <div className="p-2.5 bg-blue-50 text-blue-900 rounded-lg">
-                    <Phone className="w-5 h-5" />
+                  <div className="rounded-lg bg-blue-50 p-2.5 text-[#123b63]">
+                    <Phone className="h-5 w-5" />
                   </div>
+
                   <div>
-                    <span className="block text-xs text-gray-500 font-medium">Telefone</span>
-                    <a href="tel:+556134891364" className="font-semibold hover:text-blue-900 transition-colors">
+                    <span className="block text-xs font-medium text-gray-500">
+                      Telefone
+                    </span>
+
+                    <a
+                      href="tel:+556134891364"
+                      className="font-semibold transition-colors hover:text-[#123b63]"
+                    >
                       (61) 3489-1364
                     </a>
                   </div>
                 </li>
 
                 <li className="flex items-center gap-3 text-gray-700">
-                  <div className="p-2.5 bg-blue-50 text-blue-900 rounded-lg">
-                    <Mail className="w-5 h-5" />
+                  <div className="rounded-lg bg-blue-50 p-2.5 text-[#123b63]">
+                    <Mail className="h-5 w-5" />
                   </div>
+
                   <div>
-                    <span className="block text-xs text-gray-500 font-medium">E-mail</span>
-                    <a href="mailto:sobradinhogases@gmail.com" className="font-semibold hover:text-blue-900 transition-colors">
+                    <span className="block text-xs font-medium text-gray-500">
+                      E-mail
+                    </span>
+
+                    <a
+                      href="mailto:sobradinhogases@gmail.com"
+                      className="font-semibold transition-colors hover:text-[#123b63]"
+                    >
                       sobradinhogases@gmail.com
                     </a>
                   </div>
                 </li>
 
                 <li className="flex items-center gap-3 text-gray-700">
-                  <div className="p-2.5 bg-blue-50 text-blue-900 rounded-lg">
-                    <AtSign className="w-5 h-5" />
+                  <div className="rounded-lg bg-blue-50 p-2.5 text-[#123b63]">
+                    <AtSign className="h-5 w-5" />
                   </div>
+
                   <div>
-                    <span className="block text-xs text-gray-500 font-medium">Instagram</span>
+                    <span className="block text-xs font-medium text-gray-500">
+                      Instagram
+                    </span>
+
                     <a
                       href="https://www.instagram.com/SobradinhoGases2026/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-semibold hover:text-blue-900 transition-colors"
+                      className="font-semibold transition-colors hover:text-[#123b63]"
                     >
                       @SobradinhoGases2026
                     </a>
@@ -85,38 +115,47 @@ function Contact() {
               </ul>
             </div>
 
-            {/* Horário de Funcionamento */}
-            <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex flex-col justify-between">
-              <div>
-                <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-                  <Clock className="w-5 h-5 text-blue-900" />
-                  Horário de Funcionamento
-                </h3>
-                <div className="bg-slate-50 p-4 rounded-xl border border-slate-100">
-                  <span className="block text-sm font-medium text-gray-500">Atendimento Presencial e Online</span>
-                  <p className="text-slate-900 font-bold text-base mt-1">Segunda a Sexta-feira</p>
-                  <p className="text-blue-900 font-semibold text-lg">08:00 às 18:00</p>
-                </div>
+            {/* Horário */}
+            <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+              <h3 className="mb-5 flex items-center gap-2 text-lg font-bold text-slate-900">
+                <Clock className="h-5 w-5 text-[#123b63]" />
+                Horário de Funcionamento
+              </h3>
+
+              <div className="rounded-xl border border-slate-100 bg-slate-50 p-5">
+                <span className="block text-sm font-medium text-gray-500">
+                  Atendimento Presencial e Online
+                </span>
+
+                <p className="mt-1 font-bold text-slate-900">
+                  Segunda a Sexta-feira
+                </p>
+
+                <p className="text-lg font-semibold text-[#123b63]">
+                  08:00 às 18:00
+                </p>
               </div>
             </div>
           </div>
 
           {/* Localização */}
-          <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm">
-            <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <MapPin className="w-5 h-5 text-blue-900" />
+          <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+            <h3 className="mb-4 flex items-center gap-2 text-lg font-bold text-slate-900">
+              <MapPin className="h-5 w-5 text-[#123b63]" />
               Localização
             </h3>
-            <p className="text-gray-700 font-medium mb-4">
+
+            <p className="mb-4 font-medium text-gray-700">
               Quadra 17 Conjunto I Lote 3 – SOF Sobradinho, Brasília - DF
             </p>
+
             <a
               href="https://maps.google.com/?q=Quadra+17+Conjunto+I+Lote+3+SOF+Sobradinho"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-blue-900 hover:text-blue-700 underline"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-[#123b63] underline transition-colors hover:text-blue-700"
             >
-              Ver no Google Maps &rarr;
+              Ver no Google Maps →
             </a>
           </div>
         </div>

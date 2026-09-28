@@ -15,7 +15,12 @@ function About() {
               qualidade e atendimento excepcional aos nossos clientes.
             </h3>
 
-            <Button>Saiba mais</Button>
+            <Button><a
+              href="/sobre"
+              className="text-gray-200 transition-colors hover:text-white"
+            >
+              Saiba mais
+            </a></Button>
           </div>
 
           <div className="about-image overflow-hidden rounded-2xl">
