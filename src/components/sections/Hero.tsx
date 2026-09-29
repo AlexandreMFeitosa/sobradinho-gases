@@ -24,7 +24,7 @@ function Hero() {
             </p>
 
             <div className="flex justify-center lg:justify-start">
-              <Button>Conheça nossos produtos</Button>
+              <Button to={`/produtos`}>Conheça nossos produtos</Button>
             </div>
           </div>
 
