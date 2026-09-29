@@ -17,7 +17,7 @@ function FeaturedProducts() {
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {products.map((product) => (
+          {products.slice(0,6).map((product) => (
             <ProductCard
               key={product.id}
               id={product.id}
@@ -29,7 +29,7 @@ function FeaturedProducts() {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <Button to="/produtos">Ver Produtos</Button>
+          <Button to="/produtos">Ver todos os Produtos</Button>
         </div>
       </Container>
     </section>

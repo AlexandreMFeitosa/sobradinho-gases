@@ -20,7 +20,7 @@ export const products: Product[] = [
       "Atendimento domiciliar",
     ],
     image:
-      "https://oxiriber.com.br/img/produtos/argonio.webp?v=2",
+      "/products/oxigenio-gases.jpg",
   },
 
   {
@@ -35,7 +35,7 @@ export const products: Product[] = [
       "Processos industriais",
     ],
     image:
-      "https://oxiriber.com.br/img/produtos/argonio.webp?v=2",
+      "/products/dioxido-carbono-gases.jpg",
   },
 
   {
@@ -50,7 +50,7 @@ export const products: Product[] = [
       "Processos de conservação",
     ],
     image:
-      "https://oxiriber.com.br/img/produtos/argonio.webp?v=2",
+      "/products/nitrogenio-gases.jpg",
   },
 
   {
@@ -65,7 +65,7 @@ export const products: Product[] = [
       "Processos industriais",
     ],
     image:
-      "https://oxiriber.com.br/img/produtos/argonio.webp?v=2",
+      "/products/argonio-gases.jpg",
   },
 
   {
@@ -80,7 +80,7 @@ export const products: Product[] = [
       "Aplicações industriais",
     ],
     image:
-      "https://oxiriber.com.br/img/produtos/argonio.webp?v=2",
+      "/products/acetileno-gases.jpg",
   },
 
   {
@@ -95,6 +95,47 @@ export const products: Product[] = [
       "Fabricação industrial",
     ],
     image:
-      "https://oxiriber.com.br/img/produtos/argonio.webp?v=2",
+      "/products/soldagem-gases.jpg",
   },
+
+  {
+  id: "hidrogenio",
+  name: "Hidrogênio",
+  description:
+    "Gás utilizado em aplicações industriais e processos específicos que necessitam de hidrogênio.",
+  type: "Industrial",
+  applications: [
+    "Processos industriais",
+    "Laboratórios",
+    "Aplicações específicas",
+  ],
+  image: "/products/hidrogenio-gases.jpg",
+},
+{
+  id: "helio",
+  name: "Hélio",
+  description:
+    "Gás utilizado em aplicações industriais, laboratoriais e processos que necessitam de suas propriedades específicas.",
+  type: "Industrial",
+  applications: [
+    "Laboratórios",
+    "Processos industriais",
+    "Aplicações específicas",
+  ],
+  image: "/products/helio-gases.jpg",
+},
+{
+  id: "oxido-nitroso",
+  name: "Óxido Nitroso",
+  description:
+    "Gás utilizado em aplicações específicas nos setores industrial, comercial e medicinal.",
+  type: "Industrial",
+  applications: [
+    "Aplicações industriais",
+    "Setor comercial",
+    "Aplicações específicas",
+  ],
+  image: "/products/nitro-gases.jpg",
+}
+
 ];
